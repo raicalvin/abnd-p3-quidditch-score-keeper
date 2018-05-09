@@ -8,8 +8,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     // Variable to store the scores for each team
-    int scoreGryffindor = 0;
-    int scoreRavenclaw = 0;
+    int scoreGryffindor = 0; // score for Gryffindor
+    int scoreRavenclaw = 0; // score for Ravenclaw
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
