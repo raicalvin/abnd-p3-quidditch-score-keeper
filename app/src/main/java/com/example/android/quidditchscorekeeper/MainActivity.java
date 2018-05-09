@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Displays the given score for Team A.
+     * Displays the given score for Gryffindor
      */
     public void displayForGryffindor(int score) {
         TextView scoreView = (TextView) findViewById(R.id.gryffindor_score_view);
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given score for Team B.
+     * Displays the given score for Ravenclaw.
      */
     public void displayForRavenclaw(int score) {
         TextView scoreView = findViewById(R.id.ravenclaw_score_view);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the value of a 3-point shot
+     * Displays the value of a Quaffle being caught
      */
     public void quaffleMadeGryffindor(View v) {
         scoreGryffindor += 10;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the value of a 2-point shot
+     * Displays the value of a Snitch catch
      */
     public void snitchCaughtGryffindor(View v) {
         scoreGryffindor += 150;
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the value of a freethrow shot
+     * Displays the value of a foul
      */
     public void foulMadeGryffindor(View v) {
         scoreGryffindor -= 15;
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the value of a 3-point shot
+     * Displays the value of a Quaffle being caught
      */
     public void quaffleMadeRavenclaw(View v) {
         scoreRavenclaw += 10;
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the value of a 2-point shot
+     * Displays the value of a Snitch catch
      */
     public void snitchCaughtRavenclaw(View v) {
         scoreRavenclaw += 150;
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the value of a freethrow shot
+     * Displays the value of a foul
      */
     public void foulMadeRavenclaw(View v) {
         scoreRavenclaw -= 15;
