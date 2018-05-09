@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.quidditchscorekeeper.MainActivity"
+    android:background="@drawable/hogwarts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/raveclaw" />
+
+            <TextView
+                android:id="@+id/ravenclaw_score_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lindenhill"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:textSize="56sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/ravenclaw_quaffle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Quaffle +10"
+                android:layout_marginBottom="16dp"
+                android:background="#00A4CC"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/trajanpro"
+                android:onClick="quaffleMadeRavenclaw"
+                />
+
+            <Button
+                android:id="@+id/ravenclaw_snitch"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Snitch +150"
+                android:layout_marginBottom="16dp"
+                android:background="#00A4CC"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/trajanpro"
+                android:onClick="snitchCaughtRavenclaw"
+                />
+
+            <Button
+                android:id="@+id/ravenclaw_foul"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Foul -15"
+                android:background="#00A4CC"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/trajanpro"
+                android:onClick="foulMadeRavenclaw"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gryffindor" />
+
+            <TextView
+                android:id="@+id/gryffindor_score_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lindenhill"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:textSize="56sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                style="@style/GryffindorStyleButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="quaffleMadeGryffindor"
+                android:text="Quaffle +10"
+                android:fontFamily="@font/trajanpro"
+                android:background="#DA160F"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="snitchCaughtGryffindor"
+                android:text="Snitch +150"
+                android:fontFamily="@font/trajanpro"
+                android:background="#DA160F"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="foulMadeGryffindor"
+                android:text="Foul -15"
+                android:background="#DA160F"
+                android:fontFamily="@font/trajanpro"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent">
+
+
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:onClick="resetScore"
+            android:text="Reset!"
+            android:layout_centerHorizontal="true"
+            android:background="#FEF200"
+            android:fontFamily="@font/trajanpro"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
