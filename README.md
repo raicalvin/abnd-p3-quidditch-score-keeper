@@ -14,9 +14,7 @@ This app counts the score made by two Hogwarts Quidditch Teams, Gryffindor and R
 
 ## User Interface
 
-The UI implementes two columns to display two teams, each with their own solor scheme to match each team's House colors.
-
-![](http://placekitten.com/300/200) ![](http://placekitten.com/300/200)
+The UI implementes two columns to display two teams, each with their own color scheme to match each team's House colors.
 
 ## Issues
 
