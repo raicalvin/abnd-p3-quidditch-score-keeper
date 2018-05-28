@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Ravenclaw.
      */
     public void displayForRavenclaw(int score) {
-        TextView scoreView = findViewById(R.id.ravenclaw_score_view);
+        TextView scoreView = (TextView) findViewById(R.id.ravenclaw_score_view);
         scoreView.setText(String.valueOf(score));
     }
 
